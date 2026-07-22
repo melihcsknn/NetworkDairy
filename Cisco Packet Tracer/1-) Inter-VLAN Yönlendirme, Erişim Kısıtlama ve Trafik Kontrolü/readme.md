@@ -3,7 +3,7 @@
 Bu laboratuvar senaryosunda, Cisco Packet Tracer üzerinde 1941 serisi bir Router kullanılarak iki farklı alt ağ (192.168.1.0/24 ve 192.168.2.0/24) arasında yapılandırma sağlanmış; aynı zamanda ağ güvenliğini artırmak ve trafiği optimize etmek amacıyla Router CLI üzerinden çeşitli "Network Hardening" ve QoS (Quality of Service) politikaları uygulanmıştır.
 
 ## 📌 Topoloji
-![Ağ Topolojisi](../Ekran%20Alıntısı.PNG)
+![Ağ Topolojisi](Ekran%20Alıntısı.PNG)
 
 ## 🚀 Uygulanan Senaryo ve Kritik Konfigürasyonlar
 Merkezi yönlendirici üzerinden bağlanan yerel ağlarda aşağıdaki güvenlik ve optimizasyon işlemleri başarıyla test edilmiştir:
@@ -19,7 +19,7 @@ Merkezi yönlendirici üzerinden bağlanan yerel ağlarda aşağıdaki güvenlik
 In this laboratory scenario, communication between two different subnets (192.168.1.0/24 and 192.168.2.0/24) was established using a 1941 series Router on Cisco Packet Tracer. Additionally, various Network Hardening and QoS (Quality of Service) policies were implemented via the Router CLI to enhance network security and optimize traffic flow.
 
 ## 📌 Topology
-![Network Topology](../Ekran%20Alıntısı.PNG)
+![Network Topology](Ekran%20Alıntısı.PNG)
 
 ## 🚀 Applied Scenario and Key Configurations
 The following security and optimization operations were successfully tested on local networks connected via the central router:
