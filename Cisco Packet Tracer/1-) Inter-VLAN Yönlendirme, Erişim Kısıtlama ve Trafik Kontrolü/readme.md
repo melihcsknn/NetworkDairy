@@ -3,7 +3,7 @@
 Bu laboratuvar çalışmasında, Cisco Packet Tracer kullanılarak iki farklı alt ağ (192.168.1.0/24 ve 192.168.2.0/24) arasında yönlendirme yapılmış ve Router CLI ekranı üzerinden çeşitli ağ güvenliği ve trafik kontrol politikaları uygulanmıştır.
 
 ## 📌 Topoloji
-![Ağ Topolojisi](images/EkranAlıntısı.PNG)
+![Ağ Topolojisi](../../Ekran%20Alıntısı.PNG)
 
 ## 🚀 Uygulanan Senaryo ve Konfigürasyonlar
 Merkezi bir 1941 Router aracılığıyla bağlanan iki farklı yerel ağ üzerinde aşağıdaki işlemler gerçekleştirilmiştir:
@@ -19,7 +19,7 @@ Merkezi bir 1941 Router aracılığıyla bağlanan iki farklı yerel ağ üzerin
 In this lab practice, routing was established between two different subnets (192.168.1.0/24 and 192.168.2.0/24) using Cisco Packet Tracer, and various network security and traffic control policies were applied via the Router CLI.
 
 ## 📌 Topology
-![Network Topology](images/EkranAlıntısı.PNG)
+![Ağ Topolojisi](../../Ekran%20Alıntısı.PNG)
 
 ## 🚀 Applied Scenario and Configurations
 The following operations were performed on two different local networks connected via a central 1941 Router:
