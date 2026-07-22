@@ -1,29 +1,29 @@
-# 🇹🇷 Ağ Trafiği Kontrolü: Erişim Engelleme ve Bant Genişliği Sınırlandırma
+# 🇹🇷 Ağ Güvenliği ve Trafik Optimizasyonu: Yönlendirme & Erişim Kontrolü
 
-Bu laboratuvar çalışmasında, Cisco Packet Tracer kullanılarak iki farklı alt ağ (192.168.1.0/24 ve 192.168.2.0/24) arasında yönlendirme yapılmış ve Router CLI ekranı üzerinden çeşitli ağ güvenliği ve trafik kontrol politikaları uygulanmıştır.
+Bu laboratuvar senaryosunda, Cisco Packet Tracer üzerinde 1941 serisi bir Router kullanılarak iki farklı alt ağ (192.168.1.0/24 ve 192.168.2.0/24) arasında yapılandırma sağlanmış; aynı zamanda ağ güvenliğini artırmak ve trafiği optimize etmek amacıyla Router CLI üzerinden çeşitli "Network Hardening" ve QoS (Quality of Service) politikaları uygulanmıştır.
 
 ## 📌 Topoloji
 ![Ağ Topolojisi](../../Ekran%20Alıntısı.PNG)
 
-## 🚀 Uygulanan Senaryo ve Konfigürasyonlar
-Merkezi bir 1941 Router aracılığıyla bağlanan iki farklı yerel ağ üzerinde aşağıdaki işlemler gerçekleştirilmiştir:
+## 🚀 Uygulanan Senaryo ve Kritik Konfigürasyonlar
+Merkezi yönlendirici üzerinden bağlanan yerel ağlarda aşağıdaki güvenlik ve optimizasyon işlemleri başarıyla test edilmiştir:
 
-* **Erişim Engelleme (Access Control List - ACL):** Cihazların (PC, Laptop veya Sunucu) birbirleriyle olan iletişimini kontrol altına almak için CLI üzerinden ACL kuralları yazılmıştır. Belirli IP adreslerinin ağlara veya sunuculara erişimi engellenmiştir (Deny/Permit kuralları).
-* **Hız Düşürme (Traffic Shaping / Rate Limiting):** Ağ üzerindeki trafiği optimize etmek amacıyla GigabitEthernet arayüzleri üzerinde bant genişliği sınırlandırması yapılmış, paket iletim hızları düşürülmüştür.
-* **Temel Yönlendirme:** Farklı bloklardaki (192.168.1.x ve 192.168.2.x) cihazların haberleşmesi için Router üzerinde Gateway yapılandırmaları tamamlanmıştır.
+* **Hedefe Yönelik Erişim Engelleme (ACL):** Ağ içerisindeki cihazların yetkisiz erişimlerini kısıtlamak amacıyla Standart/Genişletilmiş Erişim Kontrol Listeleri (ACL) yapılandırıldı. CLI üzerinden yazılan kurallar ile **192.168.1.2** IP adresine sahip cihazın ağ üzerindeki erişimi tamamen engellendi (Deny).
+* **Bant Genişliği ve Hız Optimizasyonu (Traffic Shaping):** Ağ performansını korumak ve darboğazları (bottleneck) önlemek için GigabitEthernet arayüzlerinde hız sınırlandırması (Rate Limiting) uygulandı. Bu kapsamda, **192.168.1.3** IP adresine sahip cihazın paket iletim hızı CLI üzerinden düşürülerek ağ trafiği optimize edildi.
+* **Temel Yönlendirme ve Gateway Yapılandırması:** Farklı IP bloklarındaki uç noktaların (End Devices) kesintisiz haberleşebilmesi için Router üzerinde gerekli Gateway adreslemeleri ve arayüz konfigürasyonları tamamlandı.
 
 ---
 
-# 🇬🇧 Network Traffic Control: Access Deny and Bandwidth Limiting
+# 🇬🇧 Network Security & Traffic Optimization: Routing & Access Control
 
-In this lab practice, routing was established between two different subnets (192.168.1.0/24 and 192.168.2.0/24) using Cisco Packet Tracer, and various network security and traffic control policies were applied via the Router CLI.
+In this laboratory scenario, communication between two different subnets (192.168.1.0/24 and 192.168.2.0/24) was established using a 1941 series Router on Cisco Packet Tracer. Additionally, various Network Hardening and QoS (Quality of Service) policies were implemented via the Router CLI to enhance network security and optimize traffic flow.
 
 ## 📌 Topology
-![Ağ Topolojisi](../../Ekran%20Alıntısı.PNG)
+![Network Topology](../../Ekran%20Alıntısı.PNG)
 
-## 🚀 Applied Scenario and Configurations
-The following operations were performed on two different local networks connected via a central 1941 Router:
+## 🚀 Applied Scenario and Key Configurations
+The following security and optimization operations were successfully tested on local networks connected via the central router:
 
-* **Access Control List (ACL):** ACL rules were written via CLI to control the communication between devices (PC, Laptop, or Server). Specific IP addresses were blocked from accessing networks or servers (Deny/Permit rules).
-* **Traffic Shaping / Rate Limiting:** To optimize network traffic, bandwidth limitation was applied on GigabitEthernet interfaces, reducing packet transmission rates.
-* **Basic Routing:** Gateway configurations were completed on the Router to allow communication between devices in different blocks (192.168.1.x and 192.168.2.x).
+* **Targeted Access Denial (ACL):** Standard/Extended Access Control Lists (ACLs) were configured to restrict unauthorized access by devices within the network. Through rules applied via the CLI, the device with the IP address **192.168.1.2** was strictly denied access to the network.
+* **Bandwidth and Speed Optimization (Traffic Shaping):** Rate Limiting was applied to the GigabitEthernet interfaces to maintain network performance and prevent bottlenecks. Consequently, the packet transmission speed of the device with the IP address **192.168.1.3** was throttled via the CLI, ensuring optimized network traffic.
+* **Basic Routing and Gateway Configuration:** Essential Gateway addressing and interface configurations were completed on the Router to allow seamless communication between end devices located in different IP blocks.
